@@ -10,3 +10,10 @@ var car = null;
 alert(typeof car);  //"object"
 
 alert(null == undefined);   //true
+
+alert(NaN == NaN);  //false
+alert(isNaN(10));  //false
+alert(isNaN(NaN));  //false
+alert(isNaN("10"));  //false
+alert(isNaN("blue"));  //true
+alert(isNaN("true"));   //false

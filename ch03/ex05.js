@@ -97,7 +97,81 @@ alert(result); //1
 var result = 25 | 3;
 alert(result);   //27
 
+//按位异或
+var result = 25 ^ 3;
+alert(result); //26
 
+//左移
+var oldValue = 2;      //等于二进制的10
+var newValue = oldValue << 5;    //64,等于二进制的1000000
+//有符号的右移
+var oldValue = 64;       //等于二进制的1000000
+var newValue = oldValue >> 5;      //等于二进制的10，十进制的2
 
+//无符号右移
+var oldValue = 64; //等于二进制的1000000
+var newValue = oldValue >>> 5;    //等于二进制的10.即十进制的2
 
+var oldValue = -64;   //等于二进制的111111111111111111111111111000000
+var newValue = oldValue >>> 5;  //等于是十进制的134217726
 
+//3.布尔操作符
+//逻辑非
+alert(!false);   //true
+alert(!"blue");   //false
+alert(!0);   //true
+alert(!NaN);    //true
+alert(!"");    //true
+alert(!12345);  //false
+
+//逻辑与
+var result = true && false;
+
+var found = true;
+var result = (found && someUndefinedVariable);
+alert(result);
+
+var result = false;
+var result = (found && someUndefinedVariable);
+alert(result);
+//逻辑或
+var result = true || false;
+var found = true;
+var result = (found || someUndefinedVariable);
+alert(result);
+
+var myObject = preferredObject || backupObject;//我们可以利用逻辑或的这一行为来避免为变量赋null或undefined值。
+
+//乘法
+var result = 34 * 56;
+//除法
+var result = 66 / 11;   //6
+//求模
+var result = 26 % 5;    //1
+
+//加性操作符
+//加法
+var result = 1 + 2;
+var result1 = 5 + 5;   //两个数值相加
+alert(result1);    //10
+var result2 = 5 + "5";   //一个数值和一个字符串相加
+alert(result2);     //"55"
+
+var num1 = 5;
+var num2 = 10;
+var message = "The sum of 5 and 10 is " + num1 + num 2;
+alert(message);    //"The sum of 5 and 10 is 510"
+
+var num1 = 5;
+var num2 = 10;
+var message = "The sum of 5 and 10 is " + (num1 + num2);
+alert(message);
+
+//减法
+var result = 2 - 1;      
+var result1 = 5 - true;   //4，因为true被撞成了1
+var result2 = NaN - 1;    //NaN
+var result3 = 5 - 3;       //2
+var result4 = 5 - "";      //5,因为转换成了0
+var result5 = 5 - "2";      //3,因为“2”被转换成了2
+var result6 = 5 - null;     //5，因为null被转成了0

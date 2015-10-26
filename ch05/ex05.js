@@ -190,22 +190,3 @@ function sayColor(){
 }
 var objectSayColor = sayColor.bind(o);
 objectSayColor();		//blue
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

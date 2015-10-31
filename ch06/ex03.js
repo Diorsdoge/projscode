@@ -244,27 +244,3 @@ inheritPrototype(SubType, SuperType);
 SubType.prototype.sayAge = function(){
 	alert(this.age);
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
